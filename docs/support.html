@@ -1,158 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus Marketplace Support</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Marketplace Support</title>
 
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            line-height: 1.7;
-            color: #222;
-            background: #fff;
-        }
+  <style>
+    :root {
+      --bg: #f5f2ec;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #6b6b64;
+      --border: #ded8cd;
+      --accent: #2f3b33;
+    }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-        h2 {
-            margin-top: 40px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-        }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
 
-        .contact-box {
-            background: #f7f7f7;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 20px 0;
-        }
+    .hero {
+      text-align: center;
+      margin-bottom: 36px;
+    }
 
-        .faq {
-            margin-bottom: 25px;
-        }
+    .logo {
+      font-size: 14px;
+      letter-spacing: 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
 
-        .faq h3 {
-            margin-bottom: 8px;
-        }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      margin: 0 0 16px;
+    }
 
-        a {
-            color: #000;
-        }
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 620px;
+      margin: 0 auto;
+    }
 
-        footer {
-            margin-top: 50px;
-            color: #666;
-            font-size: 14px;
-        }
-    </style>
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .contact-box {
+      background: #f8f7f3;
+      border-radius: 16px;
+      padding: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-box strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 0;
+      margin-bottom: 12px;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 20px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      font-size: 24px;
+      color: var(--accent);
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 20px 20px;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 32px 16px;
+      }
+
+      .card {
+        padding: 22px;
+        border-radius: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <main class="container">
+    <section class="hero">
+      <div class="logo">Focus Marketplace</div>
+      <h1>Support</h1>
+      <p class="subtitle">
+        Need help, have feedback, or found an issue? We’re here to help.
+      </p>
+    </section>
 
-    <h1>Focus Marketplace Support</h1>
+    <section class="card">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <strong>Email Support</strong>
+        <a href="mailto:focusmarketplacesupport@gmail.com">focusmarketplacesupport@gmail.com</a>
+        <p>We typically respond within 10 business days.</p>
+      </div>
+    </section>
 
-    <p>
-        Welcome to Focus Marketplace support.
-        If you have questions, feedback, or experience issues while using the app,
-        we're here to help.
-    </p>
+    <section class="card">
+      <h2>Frequently Asked Questions</h2>
 
-    <div class="contact-box">
-        <strong>Email Support</strong><br>
-        focusmarketplacesupport@gmail.com
-        <br><br>
-        We typically respond within 2 business days.
-    </div>
-
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="faq">
-        <h3>What is Focus Marketplace?</h3>
+      <details>
+        <summary>What is Focus Marketplace?</summary>
         <p>
-            Focus Marketplace helps users browse popular marketplace websites in a more
-            intentional and distraction-free way.
+          Focus Marketplace helps users browse popular marketplace websites in a more intentional and distraction-free way.
         </p>
-    </div>
+      </details>
 
-    <div class="faq">
-        <h3>Do I need to create an account?</h3>
+      <details>
+        <summary>Do I need to create an account?</summary>
         <p>
-            No. Focus Marketplace does not require its own account system.
+          No. Focus Marketplace does not require its own account system.
         </p>
-    </div>
+      </details>
 
-    <div class="faq">
-        <h3>Does Focus Marketplace collect my personal information?</h3>
+      <details>
+        <summary>Does Focus Marketplace collect my personal information?</summary>
         <p>
-            No. Focus Marketplace does not collect or store personal information.
-            Preferences are stored locally on your device.
+          No. Focus Marketplace does not collect or store personal information. Preferences are stored locally on your device.
         </p>
-    </div>
+      </details>
 
-    <div class="faq">
-        <h3>How do I sign in to Facebook Marketplace or other marketplaces?</h3>
+      <details>
+        <summary>How do I sign in to Facebook Marketplace or other marketplaces?</summary>
         <p>
-            Sign-in is handled directly by the marketplace provider. Focus Marketplace
-            does not have access to your usernames, passwords, messages, or account data.
+          Sign-in is handled directly by the marketplace provider. Focus Marketplace does not access your usernames, passwords, messages, or account data.
         </p>
-    </div>
+      </details>
 
-    <div class="faq">
-        <h3>What does Greyscale Mode do?</h3>
+      <details>
+        <summary>What does Greyscale Mode do?</summary>
         <p>
-            Greyscale Mode reduces visual stimulation by displaying marketplace content
-            in shades of grey, helping users stay focused while browsing.
+          Greyscale Mode reduces visual stimulation by displaying marketplace content in shades of grey, helping users stay focused while browsing.
         </p>
-    </div>
+      </details>
 
-    <div class="faq">
-        <h3>What are Session Reminders?</h3>
+      <details>
+        <summary>What are Session Reminders?</summary>
         <p>
-            Session reminders help you stay aware of your browsing time by displaying
-            periodic notifications based on your selected interval.
+          Session reminders help you stay aware of your browsing time by displaying periodic reminders based on your selected interval.
         </p>
-    </div>
+      </details>
 
-    <div class="faq">
-        <h3>Can I change my country later?</h3>
+      <details>
+        <summary>Can I change my country later?</summary>
         <p>
-            Yes. You can reset your country selection at any time from the Settings screen.
+          Yes. You can reset your country selection from the Settings screen.
         </p>
-    </div>
+      </details>
 
-    <div class="faq">
-        <h3>Is Focus Marketplace affiliated with Facebook, Meta, Kijiji, Karrot, OLX, or other marketplaces?</h3>
+      <details>
+        <summary>Is Focus Marketplace affiliated with marketplace providers?</summary>
         <p>
-            No. Focus Marketplace is an independent application and is not affiliated
-            with, endorsed by, or sponsored by any marketplace provider.
+          No. Focus Marketplace is an independent application and is not affiliated with, endorsed by, or sponsored by Facebook, Meta, Kijiji, Karrot, OLX, Quikr, Craigslist, or any other marketplace provider.
         </p>
-    </div>
+      </details>
 
-    <div class="faq">
-        <h3>How do I report a bug or suggest a feature?</h3>
+      <details>
+        <summary>How do I report a bug or suggest a feature?</summary>
         <p>
-            Send us an email at focusmarketplacesupport@gmail.com and include as much detail
-            as possible. We appreciate your feedback.
+          Email us at focusmarketplacesupport@gmail.com with details about the issue or suggestion.
         </p>
-    </div>
+      </details>
+    </section>
 
-    <h2>Privacy Policy</h2>
-
-    <p>
-        View our Privacy Policy:
-        <a href="index.html">Privacy Policy</a>
-    </p>
+    <section class="card">
+      <h2>Privacy Policy</h2>
+      <p>
+        View our <a href="index.html">Privacy Policy</a>.
+      </p>
+    </section>
 
     <footer>
-        Focus Marketplace © 2026<br>
-        Independent marketplace browsing application.
+      Focus Marketplace © 2026<br />
+      Independent marketplace browsing application.
     </footer>
-
+  </main>
 </body>
 </html>
